@@ -103,8 +103,39 @@
 
   Ключ *[ФІЛЬТР](#фільтр)а* **`doorConfiguration`**, значення **`singleDoor`** | **`doubleDoor`**
 
+## :sparkles: Віджет СПЕЦИФІКАЦІЯ
 
-  ## Список шаф
+## :sparkles: Віджет КАРТОЧКА ТОВАРУ
+
+## ФІЛЬТР
+Описує ключі для всіх селекторів у віджеті фільтрів
+[ВІДЖЕТ ФІЛЬТРІВ](#sparkles-віджет-фільтри)
+
+```ts
+export type Filter = {
+  // визначаємо основний конструктив
+  manufacturer: string;
+  type: string;
+  material: string;
+  ip: number;
+  height: number | null;
+  width: number | null;
+  depth: number | null;
+  mountingPlate: boolean;
+  // визначаємо конструктивні елементи
+  doorVisibility: "plainDoor" | "glazedDoor";
+  doorConfiguration: "singleDoor" | "doubleDoor";
+  rearPanel: "rearPanel" | "plainDoor" | "glazedDoor";
+  rearPanelAsDoor: "singleDoor" | "doubleDoor";
+  plinth: 100 | 200 | null;
+  rainHood: boolean;
+};
+```
+Перейти до віджета: [ФІЛЬТРИ](#sparkles-віджет-фільтри) | [СПЕЦИФІКАЦІЯ](#sparkles-віджет-специфікація) | [КАРТОЧКА ТОВАРУ](#sparkles-віджет-карточка-товару)
+
+Перейти до секції віджета фільтрів: [виробник](#collision-секція-виробник) | [ip](#collision-секція-ip) | [виконання](#collision-секція-виконання) | [матеріал](#collision-секція-матеріал) | [габарити](#collision-секція-габарити) | [монтажна плата](#collision-секція-монтажна-плата) | [цоколь](#collision-секція-цоколь) | [двері](#collision-секція-двері)
+
+## Список шаф
 Список шаф ( надалі <a id="list" style="text-decoration: none; color:#38B2AC;">СПИСОК</a> ) представляє собой **json** файл з масивом об'єктів, які описують структуру шафи.
 Типізований об'єкт шафи
 
@@ -281,29 +312,3 @@ type EnclosureType = {
   };
 };
 ```
-
-## ФІЛЬТР
-Описує ключі для всіх селекторів у віджеті фільтрів
-[ВІДЖЕТ ФІЛЬТРІВ](#sparkles-віджет-фільтри)
-
-```ts
-export type Filter = {
-  // визначаємо основний конструктив
-  manufacturer: string;
-  type: string;
-  material: string;
-  ip: number;
-  height: number | null;
-  width: number | null;
-  depth: number | null;
-  mountingPlate: boolean;
-  // визначаємо конструктивні елементи
-  doorVisibility: "plainDoor" | "glazedDoor";
-  doorConfiguration: "singleDoor" | "doubleDoor";
-  rearPanel: "rearPanel" | "plainDoor" | "glazedDoor";
-  rearPanelAsDoor: "singleDoor" | "doubleDoor";
-  plinth: 100 | 200 | null;
-  rainHood: boolean;
-};
-```
-Перейти до секції віджета фільтрів: [виробник](#collision-секція-виробник) | [ip](#collision-секція-ip) | [виконання](#collision-секція-виконання) | [матеріал](#collision-секція-матеріал) | [габарити](#collision-секція-габарити) | [монтажна плата](#collision-секція-монтажна-плата) | [цоколь](#collision-секція-цоколь) | [двері](#collision-секція-двері)
