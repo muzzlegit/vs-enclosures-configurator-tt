@@ -206,33 +206,26 @@ export type Filter = {
 };
 ```
 
-:sparkles:
-### Віджет ФІЛЬТРИ
-<section style="font-size: 16px">
-  <div style="text-align: center;">
-    <img src="./images/image.png" alt="секція фільтрів" width="800" />
-  </div>
-  <p>
-    Містить селектори, за допомогую яких користувач має змогу сконфігурувати собі шафу, та отримати спеціфікацію всіх елементів. За кожний селект відповідає окремий ключ <a href="#filter" style="color: #38B2AC;">ФІЛЬТР</a>а
-  </p>
-  <div style="padding: 0 12px">
-    <h3 id="filter_section" style="color: tomato;">Секція Виробник</h3>
-    <div style="text-align: left;">
-      <img src="./images/manufacturer.png" alt="секція фільтрів" width="500" />
-    </div>
-   <p>
-      Варіанти формуються з <a href="#list" style="color: #38B2AC;">СПИСОК</a>, по полю <strong     style="color:wheat">manufacturer</strong>
-    </p>
-   <p>Фільтрує варіанти шаф по виробнику, значенню ключа <a href="#filter" style="color: #38B2AC;">ФІЛЬТР</a>а <strong   style="color:wheat">manufacturer</strong></p>
-  </div>
-    <div style="padding: 0 12px">
-    <h3 id="filter_section" style="color: tomato;">Секція IP</h3>
-    <div style="text-align: left;">
-      <img src="./images/IP.png" alt="секція фільтрів" width="100" />
-    </div>
-    <p>
-      Варіанти формуються з <a href="#list" style="color: #38B2AC;">СПИСОК</a>, по полю <strong style="color:wheat">ip</strong>
-    </p>
-   <p>Фільтрує варіанти шаф по ступеню захисту ІР, значенню ключа <a href="#filter" style="color: #38B2AC;">ФІЛЬТР</a>а <strong   style="color:wheat">ip</strong></p>
-  </div>
-</section>
+## Віджет ФІЛЬТРИ :sparkles:
+  Містить селектори, за допомогую яких користувач має змогу сконфігурувати собі шафу, та отримати спеціфікацію всіх елементів. За кожний селект відповідає окремий ключ фільтра
+
+[ФІЛЬТР](#фільтр)
+
+![filters](./images/image.png)
+
+### Секція Виробник :anger:
+
+![manufacturer](./images/manufacturer.png)
+
+Варіанти формуються з [СПИСОК](#список-шаф), по полю `manufacturer`
+
+Фільтрує варіанти шаф по виробнику, значенню ключа [ФІЛЬТР](#фільтр)а `manufacturer`
+
+### Секція IP :anger:
+
+![IP](/images/IP.png)
+
+Варіанти формуються з [СПИСОК](#список-шаф), по полю `ip`
+
+Фільтрує варіанти шаф по ступеню захисту ІР, значенню ключа [ФІЛЬТР](#фільтр)а `ip`
+
