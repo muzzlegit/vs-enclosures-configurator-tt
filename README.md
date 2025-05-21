@@ -181,9 +181,9 @@ type EnclosureType = {
 };
 ```
 
-## Структура фільтру
-
-Тип <a id="filter" style="text-decoration: none; color:#61AFEF;">ФІЛЬТР</a>у для <a href="#filter_section" style="color: #38B2AC;">ВІДЖЕТ ФІЛЬТРІВ</a>
+## ФІЛЬТР
+Містить ключі для всіх селекторів у віджеті фільтрів
+[ВІДЖЕТ ФІЛЬТРІВ](#віджет-фільтри)
 
 ```ts
 export type Filter = {
@@ -206,8 +206,9 @@ export type Filter = {
 };
 ```
 
+:sparkles:
+### Віджет ФІЛЬТРИ
 <section style="font-size: 16px">
-  <h2 id="filter_section" style="color: tomato;">Віджет ФІЛЬТРИ</h2>
   <div style="text-align: center;">
     <img src="./images/image.png" alt="секція фільтрів" width="800" />
   </div>
